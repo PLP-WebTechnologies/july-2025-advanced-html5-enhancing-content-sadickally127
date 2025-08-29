@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Enhanced Form</title>
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <h1>Enhanced HTML5 Page</h1>
+    <p>This page demonstrates the use of lists, tables, media, and a structured HTML5 form.</p>
+  </header>
+
+  <!-- Lists Section -->
+  <section>
+    <h2>Favorite Programming Languages</h2>
+    <ul>
+      <li>Python</li>
+      <li>JavaScript</li>
+      <li>Java</li>
+      <li>C++</li>
+    </ul>
+
+    <h2>Steps to Build a Website</h2>
+    <ol>
+      <li>Plan the structure</li>
+      <li>Write semantic HTML</li>
+      <li>Style with CSS</li>
+      <li>Add interactivity with JavaScript</li>
+      <li>Deploy online</li>
+    </ol>
+  </section>
+
+  <!-- Table Section -->
+  <section>
+    <h2>Student Grades Table</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Name</th>
+          <th>Subject</th>
+          <th>Grade</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Alice</td>
+          <td>Mathematics</td>
+          <td>A</td>
+        </tr>
+        <tr>
+          <td>Bob</td>
+          <td>Science</td>
+          <td>B+</td>
+        </tr>
+        <tr>
+          <td>Charlie</td>
+          <td>History</td>
+          <td>A-</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Media Section -->
+  <section>
+    <h2>Media Showcase</h2>
+    <figure>
+      <img src="download/Images/Gallery1.jpg" alt="Sample Image" width="400">
+      <figcaption>Sample image displayed with semantic HTML.</figcaption>
+    </figure>
+
+    <figure>
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mpeg">
+        Your browser does not support the audio element.
+      </audio>
+      <figcaption>Sample audio file.</figcaption>
+    </figure>
+
+    <figure>
+      <video controls width="400">
+        <source src="sample-video.mp4" type="video/mp4">
+        Your browser does not support the video element.
+      </video>
+      <figcaption>Sample video file.</figcaption>
+    </figure>
+  </section>
+
+  <!-- Form Section -->
+  <section>
+    <h2>Registration Form</h2>
+    <form action="#" method="post">
+      
+      <fieldset>
+        <legend>Personal Information</legend>
+        <label for="fullname">Full Name:</label>
+        <input type="text" id="fullname" name="fullname" placeholder="Enter your full name" required minlength="3">
+        
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" placeholder="example@email.com" required autocomplete="email">
+        
+        <label for="phone">Phone Number:</label>
+        <input type="tel" id="phone" name="phone" placeholder="+255712345678" pattern="^\+?\d{9,15}$" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Account Details</legend>
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Choose a username" required minlength="4" maxlength="15">
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter password" required minlength="6">
+        
+        <label for="confirm-password">Confirm Password:</label>
+        <input type="password" id="confirm-password" name="confirm-password" placeholder="Re-enter password" required>
+      </fieldset>
+
+      <fieldset>
+        <legend>Preferences</legend>
+        <label for="gender">Gender:</label>
+        <select id="gender" name="gender" required>
+          <option value="">--Select--</option>
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="other">Other</option>
+        </select>
+
+        <label for="bio">Short Bio:</label>
+        <textarea id="bio" name="bio" rows="4" placeholder="Tell us something about yourself..." required></textarea>
+        
+        <label>
+          <input type="checkbox" name="terms" required> I agree to the Terms & Conditions
+        </label>
+      </fieldset>
+
+      <button type="submit">Register</button>
+    </form>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>&copy; 2025 Enhanced HTML5 Form Example</p>
+  </footer>
+
+</body>
+</html>
